@@ -1,0 +1,46 @@
+body {
+  background-color: #eeeeee;
+}
+
+form {
+  background-color: #bc3b6a;
+  padding: 0.45rem;
+}
+
+.header-input {
+  display: flex;
+  justify-content: center;
+}
+.header-input .ada-logo {
+  width: 33px;
+  height: 100%;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+}
+.header-input .InputAddOn {
+  display: flex;
+  width: 50%;
+}
+.header-input .InputAddOn .InputAddOn-field {
+  width: 97%;
+  padding: 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 34px;
+}
+.header-input .InputAddOn .InputAddOn-item {
+  border-radius: 0px 6px 6px 0px;
+  padding: 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 34px;
+  background-color: #eeeeee;
+}
+
+/*# sourceMappingURL=home.css.map */

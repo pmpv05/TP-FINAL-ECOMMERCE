@@ -1,0 +1,124 @@
+body {
+  background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  background-color: #bc3b6a;
+  padding: 0.45rem;
+}
+
+.header-input {
+  display: flex;
+  justify-content: center;
+}
+.header-input .ada-logo {
+  width: 33px;
+  height: 100%;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+}
+.header-input .InputAddOn {
+  display: flex;
+  width: 50%;
+}
+.header-input .InputAddOn .InputAddOn-field {
+  position: relative;
+  width: 97%;
+  padding: 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.header-input .InputAddOn .InputAddOn-item {
+  position: absolute;
+  border-radius: 0px 6px 6px 0px;
+  margin-left: 44.1rem;
+  margin-top: 8.4px;
+  padding: 1px 7px;
+  height: 34px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+.breadcrumb {
+  padding: 1rem;
+  margin-left: 18.2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 36%;
+}
+.breadcrumb p {
+  font-weight: bold;
+  font-size: 13px;
+  color: #686767;
+}
+
+.total-container {
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 60%;
+  height: auto;
+  margin: 0.1rem auto;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.total-container .item-container {
+  display: flex;
+  justify-content: space-between;
+}
+.total-container .item-container .picture-container {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  border-radius: 0.2rem;
+}
+.total-container .item-container .item-title {
+  margin-right: 4rem;
+}
+.total-container .item-container .item-title .item-status {
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+.total-container .item-container .item-title .price {
+  display: flex;
+}
+.total-container .item-container .item-title .price .whole-number {
+  font-size: xx-large;
+}
+.total-container .item-container .item-title .price .cents {
+  font-size: 20px;
+}
+.total-container .item-container .item-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.total-container .item-container .item-title #buyIt {
+  background-color: #3383f9;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 2rem;
+}
+.total-container .description-container {
+  margin-top: 1rem;
+}
+.total-container .description-container .the-description {
+  width: 54%;
+  font-size: 13px;
+  color: grey;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+.total-container .description-container h3 {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=product.css.map */

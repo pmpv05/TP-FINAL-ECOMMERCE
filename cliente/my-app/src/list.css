@@ -1,0 +1,95 @@
+body {
+  background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  background-color: #bc3b6a;
+  padding: 0.45rem;
+}
+
+.header-input {
+  display: flex;
+  justify-content: center;
+}
+.header-input .ada-logo {
+  width: 33px;
+  height: 100%;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+}
+.header-input .InputAddOn {
+  display: flex;
+  width: 50%;
+}
+.header-input .InputAddOn .InputAddOn-field {
+  position: relative;
+  width: 97%;
+  padding: 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.header-input .InputAddOn .InputAddOn-item {
+  position: absolute;
+  border-radius: 0px 6px 6px 0px;
+  margin-left: 44.1rem;
+  margin-top: 8.4px;
+  padding: 1px 7px;
+  height: 34px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+.breadcrumb {
+  padding: 1rem;
+  margin-left: 18.2rem;
+}
+.breadcrumb p {
+  font-weight: bold;
+  font-size: 13px;
+  color: #686767;
+}
+
+.total-container {
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 60%;
+  margin: 0.1rem auto;
+  position: relative;
+}
+.total-container .product-container {
+  padding: 18px;
+  display: flex;
+}
+.total-container .product-container .picture {
+  background-color: #bc3b6a;
+  width: 150px;
+  height: 150px;
+  border-radius: 0.3rem;
+}
+.total-container .product-container .price-title-container {
+  margin: 1rem;
+  width: 35%;
+}
+.total-container .product-container .price-title-container .price {
+  display: flex;
+}
+.total-container .product-container .price-title-container .price p {
+  font-size: 25px;
+}
+.total-container .product-container .price-title-container .product-title {
+  margin-top: 2rem;
+}
+.total-container .ubication {
+  font-weight: bold;
+  color: gray;
+  position: absolute;
+  margin-left: 47rem;
+  margin-top: -8rem;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=list.css.map */
