@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../home.css';
+import '../styles/home.css';
 import LogoAda from '../assets/Ada_Iso_Blanco.png';
 import SearchIcon from '../assets/Icono_Search.png';
 
