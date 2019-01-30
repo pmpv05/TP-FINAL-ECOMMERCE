@@ -13,11 +13,11 @@ class App extends Component {
   }
 
   searchTheProduct(name) {  
-    fetch('http://localhost:8080/api/items/' + name)
+    fetch('http://localhost:8080/api/items/?q=' + name)
     .then(res => res.json())
       .then(data => {
-        console.log(data.results);
-        this.setState({ products: data.results });
+        console.log(data);
+        this.setState({ products: data });
       })
        
   }
@@ -29,12 +29,12 @@ class App extends Component {
         
         <BrowserRouter>
           <div>
-          <Route
-              exact
-              path="/productos"
+          <Route exact path="/items"
               render={() => (
                 <List
-                  infoEndpoint={this.state.products.data.results}/>)}
+                  infoEndpoint={this.state.products}/>
+                  
+                )}
               />
           </div>
         </BrowserRouter> 
