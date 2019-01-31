@@ -1,6 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
 .breadcrumb {
     padding: 1rem;
-    margin-left: 18.2rem;
+    margin-left: 11.2rem;
     p {
         font-weight: bold;
         font-size: 13px;
@@ -11,7 +19,7 @@
 .total-container {
     background-color: white;
     border-radius: 0.2rem;
-    width: 60%;
+    width: 75%;
     margin: 0.1rem auto;
     position: relative;
     .product-container{
@@ -20,21 +28,33 @@
         
         .picture {
             background-color: #bc3b6a;
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 0.3rem;
+            img {
+                width: 100%;
+            }
         }
         .price-title-container {
             margin: 1rem;
-            width: 35%;
+            width: 50%;
             .price {
                 display: flex;
                 p {
                     font-size: 25px;
+                    color: black;
                 }
             }
+            .shipping {
+                img {
+                    margin-top: 1.8rem;
+                    margin-left: 1.8rem;
+                }
+                
+            }
             .product-title {
-                margin-top: 2rem;
+                margin-top: 0.5rem;
+                color: black;
             }
 
         }
@@ -44,8 +64,8 @@
         font-weight: bold;
         color: gray;
         position: absolute;
-        margin-left: 47rem;
-        margin-top: -8rem;
+        margin-left: 57rem;
+        margin-top: 3rem;
         font-size: 13px;
     }
     
