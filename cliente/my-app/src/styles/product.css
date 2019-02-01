@@ -11,19 +11,21 @@ a {
   justify-content: space-around;
   width: 45%;
   text-align: left;
-  margin-left: 17%;
+  margin-left: 18%;
 }
 .breadcrumb p {
-  font-weight: bold;
   font-size: 13px;
   color: #686767;
 }
-.breadcrumb .detail p:after {
+.breadcrumb p:after {
   content: ">";
   color: dimgray;
   padding: 15px;
 }
-.breadcrumb .detail p:last-of-type {
+.breadcrumb p:last-of-type::after {
+  content: none;
+}
+.breadcrumb p:last-of-type {
   font-weight: bold;
 }
 

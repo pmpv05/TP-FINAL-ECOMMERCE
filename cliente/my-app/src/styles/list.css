@@ -17,7 +17,8 @@ a {
 }
 
 .breadcrumbList {
-  margin-left: 17.4rem;
+  width: 63%;
+  margin: auto;
 }
 .breadcrumbList p {
   font-weight: bold;
@@ -25,56 +26,58 @@ a {
   color: #686767;
 }
 
-.total-container {
+a .total-container {
   background-color: white;
   border-radius: 0.2rem;
   width: 60%;
   height: auto;
   margin: 0.1rem auto;
   padding: 1.5rem;
+  margin-bottom: 0.2rem;
 }
-.total-container .product-container {
+a .total-container a .total-container:last-child {
+  margin-bottom: 2rem;
+}
+a .total-container .product-container {
   padding: 18px;
   display: flex;
 }
-.total-container .product-container .picture {
+a .total-container .product-container .picture {
   background-color: #bc3b6a;
   width: 180px;
   height: 180px;
   border-radius: 0.3rem;
 }
-.total-container .product-container .picture img {
+a .total-container .product-container .picture img {
   width: 100%;
 }
-.total-container .product-container .price-title-container {
+a .total-container .product-container .price-title-container {
   margin: 1rem;
   width: 50%;
 }
-.total-container .product-container .price-title-container .price {
+a .total-container .product-container .price-title-container .price {
   display: flex;
 }
-.total-container .product-container .price-title-container .price .whole-number {
+a .total-container .product-container .price-title-container .price .whole-number {
   font-size: 25px;
   color: black;
 }
-.total-container .product-container .price-title-container .price .cents {
+a .total-container .product-container .price-title-container .price .cents {
   margin-top: 1.3rem;
   font-size: 15px;
   color: black;
 }
-.total-container .product-container .price-title-container .shipping img {
+a .total-container .product-container .price-title-container .shipping img {
   margin-top: 1.8rem;
   margin-left: 1.8rem;
 }
-.total-container .product-container .price-title-container .product-title {
+a .total-container .product-container .price-title-container .product-title {
   margin-top: 0.5rem;
   color: black;
 }
-.total-container .ubication {
+a .total-container .ubication {
   font-weight: bold;
   color: gray;
-  position: absolute;
-  margin-left: 48rem;
   margin-top: 3rem;
   font-size: 13px;
 }

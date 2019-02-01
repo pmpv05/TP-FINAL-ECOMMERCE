@@ -13,21 +13,25 @@ a{
     justify-content: space-around;
     width: 45%;
     text-align: left;
-    margin-left: 17%;  
+    margin-left: 18%;  
     p {
-        font-weight: bold;
         font-size: 13px;
         color: #686767;
     }
-    .detail p:after {
-        content: ">";
-        color: dimgray;
-        padding: 15px;
-      }
     
-      
-    .detail p:last-of-type {
+    p:after {
+    content: ">";
+    color: dimgray;
+    padding: 15px;
+    }
+
+    p:last-of-type::after {
+    content: none;
+    }
+          
+    p:last-of-type {
         font-weight: bold;
+        
     }
 }
 

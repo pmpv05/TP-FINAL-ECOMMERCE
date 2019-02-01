@@ -17,7 +17,8 @@ a{
 }
 
 .breadcrumbList {    
-    margin-left: 17.4rem;
+    width: 63%;
+    margin: auto;
     p {
         font-weight: bold;
         font-size: 13px;
@@ -25,13 +26,18 @@ a{
     }
 }
 
-.total-container {
+a .total-container {
     background-color: white;
     border-radius: 0.2rem;
     width: 60%;
     height: auto;
     margin: 0.1rem auto;
-    padding: 1.5rem;    
+    padding: 1.5rem;  
+    margin-bottom: 0.2rem; 
+
+    a .total-container:last-child {
+        margin-bottom: 2rem;
+    }
     .product-container{
         padding: 18px;
         display: flex;
@@ -77,9 +83,7 @@ a{
     }
     .ubication {
         font-weight: bold;
-        color: gray;
-        position: absolute;
-        margin-left: 48rem;
+        color: gray;        
         margin-top: 3rem;
         font-size: 13px;
     }

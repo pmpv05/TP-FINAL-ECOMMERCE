@@ -14,7 +14,7 @@ class SearchBar extends Component {
         }    
     }
 
-    handleOnClickSearchButton(){
+    handleOnClickSearchButton(){ //guardamos el valor del input y pisamos el state
         const {inputValue} = this.state
         if(inputValue.trim() !== ''){ //aqui nos aseguramos de que no existan espacios en blanco
             this.props.history.push(`/items?search=${this.state.inputValue}`)
@@ -24,12 +24,12 @@ class SearchBar extends Component {
         }
     }
 
-    handleOnchangeInput(event) {
+    handleOnchangeInput(event) { //guardamos el valor del input 
         this.setState  (
             {inputValue: event.target.value}); // aca pisamos el State con lo que escribimos en el Input
     }
 
-    handleKeyPress(event){
+    handleKeyPress(event){ //cuando hacemos 'enter' guardamos la informacion del input
         const {inputValue} = this.state
         if(inputValue.trim() !== ''){
             if (event.which === 13){
@@ -42,7 +42,7 @@ class SearchBar extends Component {
     }
 
     render() {
-        console.log(this.state.inputValue)
+        
         return (        
             <div>
                <div className="form">
