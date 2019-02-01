@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import '../styles/home.css';
 import LogoAda from '../assets/Ada_Iso_Blanco.png';
 import SearchIcon from '../assets/Icono_Search.png';
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
+import { Link } from "react-router-dom";
 
 class SearchBar extends Component {
     constructor (props){
@@ -46,7 +47,7 @@ class SearchBar extends Component {
             <div>
                <div className="form">
                     <div className="header-input">
-                        <img className="ada-logo" src={LogoAda} alt=""/>
+                        <Link to='/'><img className="ada-logo" src={LogoAda} alt=""/></Link>
                         <div className="InputAddOn">
                             <input className="InputAddOn-field" type="text" placeholder="Nunca dejes de buscar" 
                             value={this.state.inputValue} onKeyPress={event => this.handleKeyPress(event)} onChange={(event) => this.handleOnchangeInput(event)}/>

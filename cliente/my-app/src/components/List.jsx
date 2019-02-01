@@ -79,7 +79,7 @@ class List extends Component {
 
         return(    
             <div>        
-                <div className="breadcrumb">
+                <div className="breadcrumbList">
                     <p>{this.state.category && this.state.category.name}</p>                    
                 </div>
                 <div>{products}</div>

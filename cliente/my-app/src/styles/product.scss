@@ -1,63 +1,37 @@
+
+
 body {
-    background-color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-form {
-    background-color: #bc3b6a; 
-    padding:  0.45rem;    
-
+a{
+    text-decoration: none;
 }
 
-.header-input {
-    display: flex;
-    justify-content: center;     
-       
-    .ada-logo{
-        width: 33px;
-        height: 100%;
-        margin-right: 1rem;
-        margin-top: 0.4rem;
-    }
-    .InputAddOn {
-        display: flex;
-        width: 50%;
-        .InputAddOn-field {
-            position: relative;
-            width: 97%;
-            padding: 7px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            
-        }
-        .InputAddOn-item {
-            position: absolute;
-            border-radius: 0px 6px 6px 0px;
-            margin-left: 44.1rem;
-            margin-top: 8.4px;
-            padding: 1px 7px;
-            height: 34px;
-            border: none;
-            background-color: #eeeeee;  
-        }
-    }   
-}
 .breadcrumb {
-    padding: 1rem;
-    margin-left: 16.8rem;
     display: flex;
-    justify-content: space-between;
-    width: 36%;
+    justify-content: space-around;
+    width: 45%;
+    text-align: left;
+    margin-left: 17%;  
     p {
         font-weight: bold;
         font-size: 13px;
         color: #686767;
     }
+    .detail p:after {
+        content: ">";
+        color: dimgray;
+        padding: 15px;
+      }
+    
+      
+    .detail p:last-of-type {
+        font-weight: bold;
+    }
 }
+
+
 
 .total-container {
     background-color: white;
@@ -75,19 +49,26 @@ form {
             height: 500px;
             background-color: pink;
             border-radius: 0.2rem;
+            img {
+                width: 100%;
+            }
         }
         .item-title {
-            margin-right: 4rem;
+            margin-right: 2rem;
+            width: 34%;
             .item-status {
                 display: flex;
                 font-size: 13px; 
-                margin-bottom: 1rem;               
+                margin-bottom: 1rem; 
+                text-transform: capitalize;            
 
             }
             .price {
                 display: flex;
                 .whole-number{
-                    font-size: xx-large;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
                 }
                 .cents {
                     font-size: 20px;
@@ -96,7 +77,7 @@ form {
             h1 {
                 font-size: 24px;
                 font-weight: bold;
-                margin-bottom: 3rem;
+                
             }
             #buyIt {
                 background-color: #3383f9;

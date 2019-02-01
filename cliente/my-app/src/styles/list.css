@@ -16,10 +16,10 @@ a {
   font-size: 23px;
 }
 
-.breadcrumb {
-  margin-left: 10.4rem;
+.breadcrumbList {
+  margin-left: 17.4rem;
 }
-.breadcrumb p {
+.breadcrumbList p {
   font-weight: bold;
   font-size: 13px;
   color: #686767;
@@ -28,9 +28,10 @@ a {
 .total-container {
   background-color: white;
   border-radius: 0.2rem;
-  width: 75%;
+  width: 60%;
+  height: auto;
   margin: 0.1rem auto;
-  position: relative;
+  padding: 1.5rem;
 }
 .total-container .product-container {
   padding: 18px;
