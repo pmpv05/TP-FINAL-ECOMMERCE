@@ -10,7 +10,7 @@ class List extends Component {
       this.state = {
         category: "",
         results: [],
-        theQueryString: queryString.parse(this.props.location.name),
+        theQueryString: queryString.parse(this.props.location.search),
         loading: true,
         error: false
       };
@@ -20,50 +20,51 @@ class List extends Component {
         fetch('http://localhost:8080/api/items/?q=' + name)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-            
+            console.log(data)
+            this.setState ({
+                category: data.categories,
+                results: data.items,
+                loading: false
+            })            
         })
-          .catch(() => {
+        .catch(() => {
             this.setState({
-                hasError: true
+                error: true
             })
-           })      
+        })      
       }
     
       componentWillReceiveProps(nextProps) {
-        const theQuery = queryString.parse(nextProps.location.name);
-        const { name } = theQuery;
-        if (name !== this.state.theQueryString) {
+        const theQuery = queryString.parse(nextProps.location.search);
+        const { search } = theQuery;
+        if (search !== this.state.theQueryString) {
           this.setState({ loading: true },
-            this.searchTheProduct(name)
+            this.searchTheProduct(search)
           )
         }
       }
       componentDidMount() {
-        this.searchTheProduct(this.state.theQueryString.name)
+        this.searchTheProduct(this.state.theQueryString.search)
       }
 
       render () {
-        if (this.state.hasError){
-            return (
-                <div>
-                    <p className='error-text' alt=''>Opss! algo anda mal</p>
-                </div>
-            )
+        if (this.state.error){
+            return <p className='error-text' alt='algo anda mal'>Opss! algo anda mal</p>            
         }
         if (this.state.loading) {
-          return <p className='loading-products'>Cargando los productos...</p>;
-        }
-
+          return <p className='loading-products'> Cargando los productos...</p>;
+        };
+        
         const products = this.state.results.map(theProduct => (                                  
             <Link to={`/items/${theProduct.id}`}>
                 <div className="total-container">
                     <div className="product-container">
-                        <div className="picture"><img src={theProduct.picture} alt={theProduct.picture} /></div>
+                        <div className="picture"><img src={theProduct.picture} alt={theProduct.picture}/></div>
                         <div className="price-title-container">
                             <div className="price">
-                                <p className="whole-number">{theProduct.price.amount}{'.'}</p><p className="cents">{theProduct.price.decimals}</p>
-                                {theProduct.free_shipping  && (
+                                <p className="whole-number">$ {theProduct.price.amount}</p>
+                                <sup className="cents">{theProduct.price.decimals}</sup>
+                                {theProduct.free_shipping && (
                                 <span className="shipping">
                                 <img src={shippingFreeImage} alt="envio gratis" />
                                 </span>)}
@@ -79,14 +80,11 @@ class List extends Component {
         return(    
             <div>        
                 <div className="breadcrumb">
-                    <p>{this.state.category}</p>                    
+                    <p>{this.state.category && this.state.category.name}</p>                    
                 </div>
                 <div>{products}</div>
-            </div>               
-            
+            </div>
         )
     }
-
-
 }
 export default List;

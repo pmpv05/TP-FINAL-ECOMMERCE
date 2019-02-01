@@ -11,7 +11,7 @@ router.get('/items', function(req, res){  //voy a buscar todos los productos a l
   .then(function (theResult) {
     
     const apiCategories = theResult.data.available_filters.find(p => p.id === 'category') //hacemos find para hallar el array de categoria
-    const theCategories = apiCategories.values; //aqui tomamos la propiedad values.
+    const theCategories = apiCategories ? apiCategories.values : [] ; //aqui tomamos la propiedad values.
     
     theCategories.sort(function (a,b){ //aca organizamos en orden descendente.
       if (a.results > b.results) {
@@ -40,9 +40,10 @@ router.get('/items', function(req, res){  //voy a buscar todos los productos a l
     })  
     
     res.json({
-      categories: [theCategories[0]],
-      items: [apidata]
-    });    
+      categories: theCategories[0],
+      items: apidata
+    });  
+      
   })
   .catch(function(err){ // es un Fail, cuando explota algo.
     console.log ('houston we got a problem '+ err)
@@ -77,6 +78,7 @@ router.get('/items', function(req, res){  //voy a buscar todos los productos a l
                     },
                     picture: productOutcome.thumbnail,
                     condition: productOutcome.condition,
+                    sold: productOutcome.sold_quantity,
                     free_shipping: productOutcome.shipping.free_shipping
                    
                   },

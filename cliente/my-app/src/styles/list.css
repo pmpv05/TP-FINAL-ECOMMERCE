@@ -6,9 +6,18 @@ a {
   text-decoration: none;
 }
 
+.error-text {
+  text-align: center;
+  font-size: 23px;
+}
+
+.loading-products {
+  text-align: center;
+  font-size: 23px;
+}
+
 .breadcrumb {
-  padding: 1rem;
-  margin-left: 11.2rem;
+  margin-left: 10.4rem;
 }
 .breadcrumb p {
   font-weight: bold;
@@ -43,8 +52,13 @@ a {
 .total-container .product-container .price-title-container .price {
   display: flex;
 }
-.total-container .product-container .price-title-container .price p {
+.total-container .product-container .price-title-container .price .whole-number {
   font-size: 25px;
+  color: black;
+}
+.total-container .product-container .price-title-container .price .cents {
+  margin-top: 1.3rem;
+  font-size: 15px;
   color: black;
 }
 .total-container .product-container .price-title-container .shipping img {
@@ -59,7 +73,7 @@ a {
   font-weight: bold;
   color: gray;
   position: absolute;
-  margin-left: 57rem;
+  margin-left: 48rem;
   margin-top: 3rem;
   font-size: 13px;
 }

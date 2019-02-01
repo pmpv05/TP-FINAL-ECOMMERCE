@@ -6,9 +6,18 @@ a{
     text-decoration: none;
 }
 
-.breadcrumb {
-    padding: 1rem;
-    margin-left: 11.2rem;
+.error-text {
+    text-align: center;
+    font-size: 23px;
+}
+
+.loading-products {
+    text-align: center;
+    font-size: 23px;
+}
+
+.breadcrumb {    
+    margin-left: 10.4rem;
     p {
         font-weight: bold;
         font-size: 13px;
@@ -40,8 +49,13 @@ a{
             width: 50%;
             .price {
                 display: flex;
-                p {
+                .whole-number {
                     font-size: 25px;
+                    color: black;
+                }
+                .cents {
+                    margin-top: 1.3rem;
+                    font-size: 15px;
                     color: black;
                 }
             }
@@ -64,7 +78,7 @@ a{
         font-weight: bold;
         color: gray;
         position: absolute;
-        margin-left: 57rem;
+        margin-left: 48rem;
         margin-top: 3rem;
         font-size: 13px;
     }
