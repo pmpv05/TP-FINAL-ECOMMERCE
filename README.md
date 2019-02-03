@@ -1,4 +1,4 @@
-Ecommerce with React.js
+# Ecommerce with React.js
 
 El Trabajo Práctico consiste en una aplicación que consta de tres componentes principales:
 
@@ -104,41 +104,43 @@ Las 3 pantallas que vamos a tener son las siguientes:
 * Dado un ID de producto, debería poder ingresar directamente a la vista de detalle de producto.
 
 
-Comenzando 🚀
+## Comenzando 🚀
 Usa git clone para clonar este repositorio en tu ordenador.
 
 * Para hacer escuchar el servidor es importante que te dirijas a la siguiente ruta:
-# servidor > rutas_meli 
+servidor > rutas_meli 
 
 ejecutes npm install (descargas los node_modules)
 luego PORT=8080 npm run watch.
 
 * Para levantar REACT, es necesario que te dirijas a la siguiente ruta:
-# cliente > my-app 
+cliente > my-app 
 ejecutes npm install (descargas los node_modules)
 npm start.
 
 Pre-requisitos 📋
 * Debes instalar el siguiente frameworks:
 
-EXPRESS => npm install -g express-generator
+`EXPRESS => npm install -g express-generator
 express --view=AppName
-$ npm install
+$ npm install`
 
-*Debes instalar la siguiente biblioteca:
-REACT.JS => npm create-react-app my-app
+* Debes instalar la siguiente biblioteca:
+`REACT.JS => npm create-react-app my-app
 cd my-app
-npm start
+npm start`
 
 * Debes tener instalados en tu ordenador los siguientes modulos con Node Package Manager:
 
-AXIOS => npm install -S axios
+AXIOS => `npm install -S axios`
 
-CORS => npm install cors
+CORS => `npm install cors`
 
-QUERY STRING => npm install query-string
+QUERY STRING => `npm install query-string`
 
-REACT ROUTER => npm install --save react-router
+REACT ROUTER => `npm install --save react-router`
+
+⌨️ con ❤️ por [tifafracica](https://github.com/tifafracica) 😊
 
 
 
