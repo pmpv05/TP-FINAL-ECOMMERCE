@@ -108,13 +108,13 @@ Usa git clone para clonar este repositorio en tu ordenador.
 * Para hacer escuchar el servidor es importante que te dirijas a la siguiente ruta:
 servidor > rutas_meli 
 
-ejecutes npm install (descargas los node_modules)
-luego PORT=8080 npm run watch.
+ejecutes `npm install` (descargas los node_modules)
+luego `PORT=8080 npm run watch`
 
 * Para levantar REACT, es necesario que te dirijas a la siguiente ruta:
 cliente > my-app 
-ejecutes npm install (descargas los node_modules)
-npm start.
+ejecutes `npm install` (descargas los node_modules)
+`npm start`
 
 Pre-requisitos 📋
 * Debes instalar el siguiente frameworks:
