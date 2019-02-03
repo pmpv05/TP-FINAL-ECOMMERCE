@@ -1,8 +1,6 @@
 # Ecommerce with React.js
 
 El Trabajo Práctico consiste en una aplicación que consta de tres componentes principales:
-
-l Trabajo Práctico consiste en una aplicación que consta de tres componentes principales:
 * El cuadro de búsqueda
 * El listado de los productos
 * El detalle de un producto
