@@ -119,14 +119,14 @@ ejecutes `npm install` (descargas los node_modules)
 Pre-requisitos 📋
 * Debes instalar el siguiente frameworks:
 
-`EXPRESS => npm install -g express-generator
-express --view=AppName
-$ npm install`
+`EXPRESS => npm install -g express-generator`
+`express --view=AppName`
+`$ npm install`
 
 * Debes instalar la siguiente biblioteca:
-`REACT.JS => npm create-react-app my-app
-cd my-app
-npm start`
+`REACT.JS => npm create-react-app my-app`
+`cd my-app`
+`npm start`
 
 * Debes tener instalados en tu ordenador los siguientes modulos con Node Package Manager:
 
