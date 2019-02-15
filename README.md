@@ -120,7 +120,9 @@ Pre-requisitos 📋
 * Debes instalar el siguiente frameworks:
 
 `EXPRESS => npm install -g express-generator
+
 express --view=AppName
+
 $ npm install`
 
 * Debes instalar la siguiente biblioteca:
