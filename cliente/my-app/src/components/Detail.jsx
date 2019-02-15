@@ -15,7 +15,7 @@ class Detail extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:8080/api/items/' + this.props.match.params.id) //aquí especificamos el nombre de nuestro parametro
+        fetch('https://enigmatic-inlet-77181.herokuapp.com/api/items/' + this.props.match.params.id) //aquí especificamos el nombre de nuestro parametro
         .then(res => res.json())
         .then(data => {
             console.log(data)

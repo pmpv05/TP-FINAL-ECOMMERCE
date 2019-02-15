@@ -100,7 +100,7 @@ Las 3 pantallas que vamos a tener son las siguientes:
 
 * En la vista de caja de búsqueda, debería poder ingresar el producto a buscar y, al enviar el formulario, navegar a la vista de Resultados de búsqueda, visualizando **solo 4** productos. Luego, al hacer clic sobre uno de ellos, debería navegar a la vista de Detalle de Producto.
 * Dado un ID de producto, debería poder ingresar directamente a la vista de detalle de producto.
-
+* Para ver el trabajo terminado, haz click [aquí](http://apathetic-yam.surge.sh/) 
 
 ## Comenzando 🚀
 Usa git clone para clonar este repositorio en tu ordenador.

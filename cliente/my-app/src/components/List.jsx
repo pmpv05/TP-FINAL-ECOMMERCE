@@ -17,7 +17,7 @@ class List extends Component {
     }
 
     searchTheProduct(name) {  //llamamos a nuestra API y traemos la informacion y pisamos nuesto state
-        fetch('http://localhost:8080/api/items/?q=' + name)
+        fetch('https://enigmatic-inlet-77181.herokuapp.com/api/items/?q=' + name)
         .then(res => res.json())
         .then(data => {
             console.log(data)
